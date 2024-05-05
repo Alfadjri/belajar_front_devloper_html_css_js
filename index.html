@@ -4,18 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <!-- INi contoh css dengan inline -->
+    <!-- <style>
+        /*ini penggunaan tag , id , class*/
+        body{
+            width: 100%;
+            height: max-content;
+            padding: 0;
+            margin: 0;
+            background-color: #D3E4CD;
+        }
+        div {
+            margin-left: 20px;
+        }
+        #navbar{
+            background-color: #99A799;
+        }
+        .tulisan{
+            color: red;
+        }
+    </style> -->
+    <!-- Contoh Penggunaan extrenal code -->
+    <link rel="stylesheet" href="./Public/Css/app.css">
 </head>
 <body>
-    <h1>Coding Studio</h1>
-    <h2>Menu Pembelajaran</h2>
-    <a href="./Halaman Belajar/tipe_tulisan.html">Tipe-tipe tulisan</a>
-    <br>
-    <a href="./Halaman Belajar/belajar_gambar.html">Belajar tag gambar html</a>
-    <br>
-    <a href="./Halaman Belajar/belajar_table.html">Belajar Table</a>
-    <br>
-    <a href="./Halaman Belajar/login_from.html">Form</a>
-    <br>
-    <a href="./Halaman Belajar/pemetaan_website.html">Pemetaan pada html</a>
+    <nav>
+        <h1 class="rm_margin">Coding Studio</h1>
+        <p class="rm_margin">Tutorial Belajar menjadi front end developer</p>
+    </nav>
+    <section id="content">
+        <h2 class="text-center">Menu Pembelajaran</h2>
+        <table class="">
+            <tr>
+                <td>
+                    <a href="./Halaman Belajar/tipe_tulisan.html">
+                        <div class="card text-center">
+                            <img src="./Public/icon/typography_780931 (1).png" alt="icon" srcset="" style="width: 200px; height: 200px;">
+                            <div>
+                                <h3 class="rm_margin">Tipe-tipe tulisan</h3>
+                                <p class="rm_margin">Menu ini mempelajarai besaran-besaran dari tag tulisan yang ada di html</p>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="./Halaman Belajar/belajar_gambar.html">
+                        <div class="card text-center">
+                            <img src="./Public/icon/picture_2659360.png" alt="icon" srcset="" style="width: 200px; height: 200px;">
+                            <div>
+                                <h3 class="rm_margin">Belajar tag gambar html</h3>
+                                <p class="rm_margin">Halaman ini mempelajari bagaimana memangil gambar pada html</p>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="./Halaman Belajar/belajar_table.html">
+                        <div class="card text-center">
+                            <img src="./Public/icon/table_14949056.png" alt="icon" srcset="" style="width: 200px; height: 200px;">
+                            <div>
+                                <h3 class="rm_margin">Belajar Table</h3>
+                                <p class="rm_margin">Halaman ini mempelajari bagaimana Membuat table pada html yang nntinya di pakai buat grid</p>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="./Halaman Belajar/login_from.html">
+                        <div class="card text-center">
+                            <img src="./Public/icon/book-user.png" alt="icon" srcset="" style="width: 200px; height: 200px;">
+                            <div>
+                                <h3 class="rm_margin">Login From</h3>
+                                <p class="rm_margin">Menu ini belajar membuat login form yang menarik</p>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="./Halaman Belajar/Login_from_responsif.html">
+                        <div class="card text-center">
+                            <img src="./Public/icon/book-user.png" alt="icon" srcset="" style="width: 200px; height: 200px;">
+                            <div>
+                                <h3 class="rm_margin">Login Form Responsif</h3>
+                                <p class="rm_margin">ini contoh code untuk Website responsif css</p>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="./Halaman Belajar/pemetaan_website.html">
+                        <div class="card text-center">
+                            <img src="./Public/icon/indent.png" alt="icon" srcset="" style="width: 200px; height: 200px;">
+                            <div>
+                                <h3 class="rm_margin">Pemetaan pada website</h3>
+                                <p class="rm_margin">Contoh penggunaan div dan section pada html</p>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </section>
 </body>
 </html>
