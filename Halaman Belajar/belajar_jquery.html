@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Public/Css/animasi_javascirot.css">
+    <title>Jquery</title>
+</head>
+<body>
+    <p>Mouse over pada DIV element akan merubah warna dan ukuran</p>
+    <button>Click tombol</button>
+    <div id="myDIV">
+        <h1>myDIV</h1>
+    </div>
+    <script>
+        // function myfunction() {
+            //  style (penggunaan css)
+            //  object (transition css)
+        //     // document.getElementById('myDIV').style.transition = "all 2s";
+        // }
+        $('button').click(function(){
+            $('#myDIV').css({
+                transition : "all 1s",
+            });
+        });
+    </script>
+</body>
+</html>

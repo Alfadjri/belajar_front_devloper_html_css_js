@@ -1,0 +1,30 @@
+body{
+    width: 100%;
+    height: 720px;
+}
+
+#myDIV {
+    border: 1px solid black;
+    background-color: lightblue;
+    width: 270px;
+    height: 200px;
+    overflow: auto  ;
+}
+.myDIV{
+    transition: all 2s;
+}
+
+#myDIV:hover{
+    background-color: coral;
+    width: 570px;
+    height: 500px;
+    padding: 100px;
+    border-radius: 50px;
+}
+
+#train {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: relative;
+    cursor: pointer;
+}

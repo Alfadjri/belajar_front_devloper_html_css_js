@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasi Javascript</title>
+    <link rel="stylesheet" href="../Public/Css/animasi_javascirot.css">
+</head>
+<body>
+    <h1> belajar menampilkan gambar</h1>
+    <a href="../index.html">Kembali</a>
+    <br>
+    <hr>
+    <!-- Transisi -->
+    <p>Mouse over pada DIV element akan merubah warna dan ukuran</p>
+    <button onclick="myfunction()">Click tombol</button>
+    <div id="myDIV">
+        <h1>myDiv</h1>
+    </div>
+    <script>
+        function myfunction() {
+            document.getElementById('myDIV').style.transition = "all 2s";
+        }
+    </script>
+    <!-- End Transisi -->
+    <br>
+    <hr>
+    <!-- Animasi -->
+    <img id="train" src="../Public/asset/kereta.gif" alt="gambar">
+    <script>
+        train.onclick = function(){
+            let start = Date.now();
+            let time = setInterval(function(){
+                let timePassed = Date.now() - start;
+                train.style.left = timePassed / 5 + "px";
+                if(timePassed > 2000) clearInterval(time);
+            },20)
+        }
+    </script>
+    <!-- End Animasi -->
+
+</body>
+</html>
